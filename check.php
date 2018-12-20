@@ -153,8 +153,9 @@ function append_ru_hostenko($RU_TEMP) {
 	flock($handle, LOCK_EX);
 	$data = '
 	
-//content of our custom modification of wp-config-sample';
+//content of our custom modification of wp-config-sample
 
+';
 fwrite($handle, $data);
 flock( $handle, LOCK_UN );
 fclose($handle);
